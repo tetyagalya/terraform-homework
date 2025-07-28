@@ -26,8 +26,21 @@ subnet_config = [
     availability_zone      = "us-east-1b"
     auto_assign_public_ip = true
     name                  = "public-subnet-2"
+  },
+    {
+    cidr_block            = "10.0.3.0/24"
+    availability_zone      = "us-east-1a"
+    auto_assign_public_ip = false
+    name                  = "private-subnet-1"
+  },
+  {
+    cidr_block            = "10.0.4.0/24"
+    availability_zone      = "us-east-1b"
+    auto_assign_public_ip = false
+    name                  = "private-subnet-2"
   }
 ]
+
 
 internet_gateway = "igw-0887b0164cffb57c7"
 
